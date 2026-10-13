@@ -1,22 +1,21 @@
 # main links links
+#
+# 注意：这里刻意使用「纯 fragment」锚点（如 #about-me），而不是模板原本的
+# /#about-me。原因：若仓库名不是 <用户名>.github.io，站点会部署在子路径
+# （例如 https://yituanyuanxiao.github.io/hpc-learning/），此时以 "/" 开头的
+# 链接会跳到域名根目录、丢掉子路径。纯 fragment 不带 "/"，在任何子路径下都正确。
 main:
   - title: "About Me"
-    url: "/#about-me"
+    url: "#about-me"
 
-  - title: "News"
-    url: "/#-news"
+  - title: "我在学什么"
+    url: "#learning"
 
-  - title: "Publications"
-    url: "/#-publications"
+  - title: "学习计划"
+    url: "#plan"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "学习经历"
+    url: "#education"
 
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
-
-  - title: "Internships"
-    url: "/#-internships"
+  - title: "找到我"
+    url: "#contact"
